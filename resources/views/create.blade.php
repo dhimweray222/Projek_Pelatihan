@@ -1,11 +1,17 @@
+<div class="container text-center ">
+    <div class="card-header bg-secondary">
+        <h5 class="card-title">DATA MAHASISWA</h5>
+    </div>
+    <div class="container mt-2">
+        <a class="btn btn-primary" href="{{url('/')}}">DATA MAHASISWA</a>
+    </div>
+</div>
+
+
 @extends('layouts.default')
 
 @section('content')
-<nav class="navbar navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="btn btn-primary" href="{{url('/')}}">DATA MAHASISWA</a>
-    </div>
-  </nav>
+
 <section>
     <div class="container mt-5">
         <div class="row">
@@ -34,4 +40,9 @@
             </div>
         </div>
     </div>
+<nav class="navbar fixed-bottom navbar-light bg-secondary" >
+        <div class="container-fluid" >
+            <h5 class="text-center">Copy Right &copy Weray2021</h5>
+        </div>
+</nav>
 </section>

@@ -1,7 +1,14 @@
+<div class="container text-center ">
+    <div class="card-header bg-secondary">
+        <h5 class="card-title">DATA MAHASISWA</h5>
+    </div>
+    <div class="container mt-2">
+        <a class="btn btn-primary" href="{{url('/')}}">DATA MAHASISWA</a>
+    </div>
+</div>
+
 @extends('layouts.default')
-
 @section('content')
-
 <section>
     <div class="container mt-5">
         <div class="row">
@@ -21,14 +28,17 @@
                         <textarea type="text" name="alamat" class="form-control" placeholder="Yogyakarta" >{{$data->alamat}}</textarea>
                     </div>
                     <div class="form-group mt-2">
-                        <button type="submit" class="btn btn-primary">Tambah</button>
+                        <button type="submit" class="btn btn-primary" style="width: 100px"> Edit </button>
                     </div>
-                    <div class="form-group mt-2">
-                        <a href="{{url('/')}}">
-                            << Kembali Ke Halaman utama</a>
-                    </div>
+
                 </form>
             </div>
         </div>
     </div>
+
+    <nav class="navbar fixed-bottom navbar-light bg-secondary" >
+            <div class="container-fluid" >
+                <h5 class="text-center">Copy Right &copy Weray2021</h5>
+            </div>
+    </nav>
 </section>

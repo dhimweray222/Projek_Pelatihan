@@ -1,12 +1,16 @@
+<div class="container text-center ">
+    <div class="card-header bg-secondary">
+        <h5 class="card-title">DATA MAHASISWA</h5>
+    </div>
+    <div class="container mt-2">
+      <a href=" {{url('create')}}" class="btn btn-primary">+ Tambah Data</a>
+    </div>
+</div>
 @extends('layouts.default')
 @section('content')
 <section>
 <div class="container ">
     <div class="">
-        <div class="">
-            <h1>DATA MAHASISWA</h1>
-            <a href=" {{url('create')}}" class="btn btn-primary">+Tambah Mahasiswa</a>
-        </div>
         <div class="col-lg-8 mt-5">
             <table class="table">
                 <thead>
@@ -36,5 +40,10 @@
         </div>
     </div>
 </div>
+<nav class="navbar fixed-bottom navbar-light bg-secondary" >
+    <div class="container-fluid" >
+        <h5 class="text-center">Copy Right &copy Weray2021</h5>
+    </div>
+</nav>
 </section>
 @endsection
